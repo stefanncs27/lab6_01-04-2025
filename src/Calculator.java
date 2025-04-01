@@ -1,5 +1,5 @@
 public class Calculator {
-    double rezultat;
+    protected double rezultat;
 
     public Calculator() {
         rezultat = 0;
