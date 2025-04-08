@@ -4,24 +4,34 @@ public class Calculator {
     public Calculator() {
         rezultat = 0;
     }
+
     public Calculator(double x) {
         rezultat = x;
     }
-    public void adunare(double x) {
+
+    public Calculator adunare(double x) {
         rezultat += x;
+        return this;
     }
-    public void scadere(double x) {
+
+    public Calculator scadere(double x) {
         rezultat -= x;
+        return this;
     }
-    public void inmultire(double x) {
+
+    public Calculator inmultire(double x) {
         rezultat *= x;
+        return this;
     }
-    public void impartire(double x) {
+
+    public Calculator impartire(double x) {
         if(x == 0){
             throw new RuntimeException("Nu se poate imparti la 0!");
         }
-        rezultat /=x;
+        rezultat /= x;
+        return this;
     }
+
     public double getRezultat() {
         return rezultat;
     }
